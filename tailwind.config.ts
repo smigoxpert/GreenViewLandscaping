@@ -72,10 +72,12 @@ const config: Config = {
         radius: 'var(--radius)',
       },
       backgroundImage: {
-        'noise': "url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"100\" height=\"100\"><filter id=\"noise\"><feTurbulence type=\"fractalNoise\" baseFrequency=\"0.9\" numOctaves=\"4\" stitchTiles=\"stitch\"/></filter><rect width=\"100\" height=\"100\" filter=\"url(%23noise)\" opacity=\"0.08\"/></svg>')",
-        'mesh': 'radial-gradient(120% 120% at 10% 10%, rgba(110,124,255,.35), transparent), radial-gradient(120% 120% at 90% 20%, rgba(34,211,238,.25), transparent), radial-gradient(120% 120% at 50% 90%, rgba(244,114,182,.25), transparent)',
+        noise:
+          'url(\'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch"/></filter><rect width="100" height="100" filter="url(%23noise)" opacity="0.08"/></svg>\')',
+        mesh: 'radial-gradient(120% 120% at 10% 10%, rgba(110,124,255,.35), transparent), radial-gradient(120% 120% at 90% 20%, rgba(34,211,238,.25), transparent), radial-gradient(120% 120% at 50% 90%, rgba(244,114,182,.25), transparent)',
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-conic':
+          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       keyframes: {
         gradient: {
@@ -113,8 +115,8 @@ const config: Config = {
         '5xl': '2.5rem',
       },
       boxShadow: {
-        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
-        'glow': '0 0 20px rgba(34, 211, 238, 0.3)',
+        glass: '0 8px 32px 0 rgba(31, 38, 135, 0.37)',
+        glow: '0 0 20px rgba(34, 211, 238, 0.3)',
         'glow-green': '0 0 20px rgba(34, 197, 94, 0.3)',
       },
       backdropBlur: {

@@ -2,7 +2,6 @@
 const nextConfig = {
   // PWA and Performance Configuration
   experimental: {
-    optimizeCss: true,
     optimizePackageImports: ['lucide-react', 'framer-motion'],
   },
 
