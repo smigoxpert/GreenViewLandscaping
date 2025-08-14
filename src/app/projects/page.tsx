@@ -75,7 +75,7 @@ const projects = [
     budget: '$15,000 - $35,000',
     difficulty: 'Advanced',
   })),
-  
+
   // Additional projects to cover all categories
   {
     id: projectsData.length + 1,
@@ -83,16 +83,20 @@ const projects = [
     category: 'Landscape Design',
     location: 'Glendale, AZ',
     duration: '3 weeks',
-    description: 'A contemporary Japanese-inspired garden featuring carefully placed stones, minimalist plantings, and a peaceful water feature.',
+    description:
+      'A contemporary Japanese-inspired garden featuring carefully placed stones, minimalist plantings, and a peaceful water feature.',
     features: ['Water Feature', 'Stone Pathways', 'Zen Plants', 'Lighting'],
-    image: 'https://images.unsplash.com/photo-1722953530874-93da110cdf69?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    image:
+      'https://images.unsplash.com/photo-1722953530874-93da110cdf69?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     beforeAfter: true,
     rating: 4.9,
     reviews: 23,
     likes: 156,
     views: 1247,
-    beforeImage: 'https://images.pexels.com/photos/6218318/pexels-photo-6218318.jpeg',
-    afterImage: 'https://images.pexels.com/photos/1590336/pexels-photo-1590336.jpeg',
+    beforeImage:
+      'https://images.pexels.com/photos/6218318/pexels-photo-6218318.jpeg',
+    afterImage:
+      'https://images.pexels.com/photos/1590336/pexels-photo-1590336.jpeg',
     completionDate: '2024-03-15',
     budget: '$25,000 - $35,000',
     difficulty: 'Advanced',
@@ -103,16 +107,20 @@ const projects = [
     category: 'Hardscaping',
     location: 'Scottsdale, AZ',
     duration: '4 weeks',
-    description: 'Complete outdoor living transformation including a custom patio, outdoor kitchen, and fire pit area for year-round entertainment.',
+    description:
+      'Complete outdoor living transformation including a custom patio, outdoor kitchen, and fire pit area for year-round entertainment.',
     features: ['Custom Patio', 'Outdoor Kitchen', 'Fire Pit', 'Seating Area'],
-    image: 'https://images.unsplash.com/photo-1597595735637-05a49627ee29?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    image:
+      'https://images.unsplash.com/photo-1597595735637-05a49627ee29?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     beforeAfter: true,
     rating: 4.8,
     reviews: 31,
     likes: 203,
     views: 1892,
-    beforeImage: 'https://images.pexels.com/photos/6218318/pexels-photo-6218318.jpeg',
-    afterImage: 'https://images.pexels.com/photos/1001676/pexels-photo-1001676.jpeg',
+    beforeImage:
+      'https://images.pexels.com/photos/6218318/pexels-photo-6218318.jpeg',
+    afterImage:
+      'https://images.pexels.com/photos/1001676/pexels-photo-1001676.jpeg',
     completionDate: '2024-02-28',
     budget: '$45,000 - $60,000',
     difficulty: 'Advanced',
@@ -123,16 +131,25 @@ const projects = [
     category: 'Commercial',
     location: 'Mesa, AZ',
     duration: '6 weeks',
-    description: 'Large-scale commercial landscaping project featuring seasonal color displays, mature trees, and professional maintenance services.',
-    features: ['Seasonal Flowers', 'Mature Trees', 'Professional Maintenance', 'Irrigation'],
-    image: 'https://images.unsplash.com/photo-1701002860449-1458a7e5357f?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    description:
+      'Large-scale commercial landscaping project featuring seasonal color displays, mature trees, and professional maintenance services.',
+    features: [
+      'Seasonal Flowers',
+      'Mature Trees',
+      'Professional Maintenance',
+      'Irrigation',
+    ],
+    image:
+      'https://images.unsplash.com/photo-1701002860449-1458a7e5357f?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     beforeAfter: true,
     rating: 4.6,
     reviews: 42,
     likes: 167,
     views: 2134,
-    beforeImage: 'https://images.pexels.com/photos/6218318/pexels-photo-6218318.jpeg',
-    afterImage: 'https://images.pexels.com/photos/33404224/pexels-photo-33404224.jpeg',
+    beforeImage:
+      'https://images.pexels.com/photos/6218318/pexels-photo-6218318.jpeg',
+    afterImage:
+      'https://images.pexels.com/photos/33404224/pexels-photo-33404224.jpeg',
     completionDate: '2023-12-10',
     budget: '$75,000 - $100,000',
     difficulty: 'Advanced',
@@ -143,16 +160,24 @@ const projects = [
     category: 'Tree Services',
     location: 'Gilbert, AZ',
     duration: '1 week',
-    description: 'Expert care and preservation of century-old oak trees, including pruning, disease treatment, and structural support.',
-    features: ['Tree Pruning', 'Disease Treatment', 'Structural Support', 'Preservation'],
+    description:
+      'Expert care and preservation of century-old oak trees, including pruning, disease treatment, and structural support.',
+    features: [
+      'Tree Pruning',
+      'Disease Treatment',
+      'Structural Support',
+      'Preservation',
+    ],
     image: 'https://images.pexels.com/photos/6218318/pexels-photo-6218318.jpeg',
     beforeAfter: false,
     rating: 4.9,
     reviews: 15,
     likes: 78,
     views: 623,
-    beforeImage: 'https://images.pexels.com/photos/6218318/pexels-photo-6218318.jpeg',
-    afterImage: 'https://images.pexels.com/photos/6218318/pexels-photo-6218318.jpeg',
+    beforeImage:
+      'https://images.pexels.com/photos/6218318/pexels-photo-6218318.jpeg',
+    afterImage:
+      'https://images.pexels.com/photos/6218318/pexels-photo-6218318.jpeg',
     completionDate: '2024-03-01',
     budget: '$8,000 - $15,000',
     difficulty: 'Expert',
@@ -163,16 +188,25 @@ const projects = [
     category: 'Urban Design',
     location: 'Glendale, AZ',
     duration: '3 weeks',
-    description: 'Innovative rooftop garden design creating a green space in the heart of the city with sustainable materials and native plants.',
-    features: ['Rooftop Design', 'Sustainable Materials', 'Native Plants', 'Urban Farming'],
-    image: 'https://images.unsplash.com/photo-1527690499469-ef2eff9c6735?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    description:
+      'Innovative rooftop garden design creating a green space in the heart of the city with sustainable materials and native plants.',
+    features: [
+      'Rooftop Design',
+      'Sustainable Materials',
+      'Native Plants',
+      'Urban Farming',
+    ],
+    image:
+      'https://images.unsplash.com/photo-1527690499469-ef2eff9c6735?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     beforeAfter: true,
     rating: 4.8,
     reviews: 28,
     likes: 134,
     views: 987,
-    beforeImage: 'https://images.pexels.com/photos/6218318/pexels-photo-6218318.jpeg',
-    afterImage: 'https://images.pexels.com/photos/1001676/pexels-photo-1001676.jpeg',
+    beforeImage:
+      'https://images.pexels.com/photos/6218318/pexels-photo-6218318.jpeg',
+    afterImage:
+      'https://images.pexels.com/photos/1001676/pexels-photo-1001676.jpeg',
     completionDate: '2024-02-15',
     budget: '$30,000 - $45,000',
     difficulty: 'Advanced',
@@ -183,20 +217,29 @@ const projects = [
     category: 'Sustainable Design',
     location: 'Phoenix, AZ',
     duration: '2 weeks',
-    description: 'Water-wise landscape design using native Arizona plants and efficient irrigation systems to create a beautiful, low-maintenance garden.',
-    features: ['Native Plants', 'Smart Irrigation', 'Mulch Beds', 'Drought Tolerant'],
-    image: 'https://plus.unsplash.com/premium_photo-1686782502878-d965a74429a8?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    description:
+      'Water-wise landscape design using native Arizona plants and efficient irrigation systems to create a beautiful, low-maintenance garden.',
+    features: [
+      'Native Plants',
+      'Smart Irrigation',
+      'Mulch Beds',
+      'Drought Tolerant',
+    ],
+    image:
+      'https://plus.unsplash.com/premium_photo-1686782502878-d965a74429a8?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     beforeAfter: false,
     rating: 4.7,
     reviews: 18,
     likes: 89,
     views: 756,
-    beforeImage: 'https://images.pexels.com/photos/6218318/pexels-photo-6218318.jpeg',
-    afterImage: 'https://images.pexels.com/photos/33404224/pexels-photo-33404224.jpeg',
+    beforeImage:
+      'https://images.pexels.com/photos/6218318/pexels-photo-6218318.jpeg',
+    afterImage:
+      'https://images.pexels.com/photos/33404224/pexels-photo-33404224.jpeg',
     completionDate: '2024-01-20',
     budget: '$15,000 - $25,000',
     difficulty: 'Intermediate',
-  }
+  },
 ]
 
 const categories = [
@@ -249,7 +292,9 @@ export default function ProjectsPage() {
   const [selectedCategory, setSelectedCategory] = useState('All Projects')
   const [sortBy, setSortBy] = useState('newest')
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid')
-  const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null)
+  const [selectedProject, setSelectedProject] = useState<
+    (typeof projects)[0] | null
+  >(null)
   const [showModal, setShowModal] = useState(false)
 
   const filteredProjects = projects.filter(project => {
@@ -292,7 +337,7 @@ export default function ProjectsPage() {
     }
   })
 
-  const openProjectDetails = (project: typeof projects[0]) => {
+  const openProjectDetails = (project: (typeof projects)[0]) => {
     setSelectedProject(project)
     setShowModal(true)
     document.body.style.overflow = 'hidden'
@@ -515,14 +560,16 @@ function ProjectDetailsModal({
   project,
   onClose,
 }: {
-  project: typeof projects[0]
+  project: (typeof projects)[0]
   onClose: () => void
 }) {
   // Set initial active image based on available images
   const [activeImage, setActiveImage] = useState<'before' | 'after'>(
     project.afterImage ? 'after' : 'before'
   )
-  const [activeTab, setActiveTab] = useState<'overview' | 'gallery' | 'specs' | 'reviews'>('overview')
+  const [activeTab, setActiveTab] = useState<
+    'overview' | 'gallery' | 'specs' | 'reviews'
+  >('overview')
 
   const tabs = [
     { id: 'overview', label: 'Overview', icon: FileText },
@@ -533,23 +580,25 @@ function ProjectDetailsModal({
 
   return (
     <motion.div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 modal-backdrop"
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       onClick={onClose}
     >
       <motion.div
-        className="bg-white rounded-2xl modal-content max-w-6xl w-full max-h-[90vh] overflow-hidden"
+        className="bg-white rounded-2xl max-w-6xl w-full max-h-[90vh] overflow-hidden shadow-2xl"
         initial={{ scale: 0.9, y: 20 }}
         animate={{ scale: 1, y: 0 }}
         exit={{ scale: 0.9, y: 20 }}
-        onClick={(e) => e.stopPropagation()}
+        onClick={e => e.stopPropagation()}
       >
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b border-gray-200">
           <div>
-            <h2 className="text-2xl font-bold text-gray-900">{project.title}</h2>
+            <h2 className="text-2xl font-bold text-gray-900">
+              {project.title}
+            </h2>
             <p className="text-gray-600">{project.location}</p>
           </div>
           <button
@@ -566,45 +615,53 @@ function ProjectDetailsModal({
           <div className="lg:w-1/2 p-6">
             <div className="relative h-80 lg:h-full rounded-xl overflow-hidden mb-4">
               <img
-                src={activeImage === 'before' && project.beforeImage ? project.beforeImage : (project.afterImage || project.image)}
+                src={
+                  activeImage === 'before' && project.beforeImage
+                    ? project.beforeImage
+                    : project.afterImage || project.image
+                }
                 alt={`${project.title} - ${activeImage === 'before' ? 'Before' : 'After'}`}
                 className="w-full h-full object-cover"
               />
-              {project.beforeAfter && project.beforeImage && project.afterImage && (
-                <div className="absolute bottom-4 left-4 before-after-toggle rounded-lg p-2">
-                  <div className="flex space-x-1">
-                    <button
-                      onClick={() => setActiveImage('before')}
-                      className={`px-3 py-1 rounded text-sm font-medium ${
-                        activeImage === 'before'
-                          ? 'active'
-                          : ''
-                      }`}
-                    >
-                      Before
-                    </button>
-                    <button
-                      onClick={() => setActiveImage('after')}
-                      className={`px-3 py-1 rounded text-sm font-medium ${
-                        activeImage === 'after'
-                          ? 'active'
-                          : ''
-                      }`}
-                    >
-                      After
-                    </button>
+              {project.beforeAfter &&
+                project.beforeImage &&
+                project.afterImage && (
+                  <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg p-2">
+                    <div className="flex space-x-1">
+                      <button
+                        onClick={() => setActiveImage('before')}
+                        className={`px-3 py-1 rounded text-sm font-medium transition-colors ${
+                          activeImage === 'before'
+                            ? 'bg-green-600 text-white'
+                            : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                        }`}
+                      >
+                        Before
+                      </button>
+                      <button
+                        onClick={() => setActiveImage('after')}
+                        className={`px-3 py-1 rounded text-sm font-medium transition-colors ${
+                          activeImage === 'after'
+                            ? 'bg-green-600 text-white'
+                            : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
+                        }`}
+                      >
+                        After
+                      </button>
+                    </div>
                   </div>
-                </div>
-              )}
+                )}
             </div>
-            
+
             {/* Additional Images */}
             <div className="grid grid-cols-3 gap-2">
               <img
                 src={project.image}
                 alt={project.title}
-                className={`w-full h-20 object-cover rounded-lg cursor-pointer image-thumbnail ${
-                  activeImage === 'after' ? 'active' : ''
+                className={`w-full h-20 object-cover rounded-lg cursor-pointer transition-all ${
+                  activeImage === 'after'
+                    ? 'ring-2 ring-green-500'
+                    : 'hover:opacity-80'
                 }`}
                 onClick={() => setActiveImage('after')}
               />
@@ -612,8 +669,10 @@ function ProjectDetailsModal({
                 <img
                   src={project.beforeImage}
                   alt={`${project.title} - Before`}
-                  className={`w-full h-20 object-cover rounded-lg cursor-pointer image-thumbnail ${
-                    activeImage === 'before' ? 'active' : ''
+                  className={`w-full h-20 object-cover rounded-lg cursor-pointer transition-all ${
+                    activeImage === 'before'
+                      ? 'ring-2 ring-green-500'
+                      : 'hover:opacity-80'
                   }`}
                   onClick={() => setActiveImage('before')}
                 />
@@ -629,18 +688,18 @@ function ProjectDetailsModal({
                 <img
                   src={project.afterImage}
                   alt={`${project.title} - After`}
-                  className={`w-full h-20 object-cover rounded-lg cursor-pointer image-thumbnail ${
-                    activeImage === 'after' ? 'active' : ''
+                  className={`w-full h-20 object-cover rounded-lg cursor-pointer transition-all ${
+                    activeImage === 'after'
+                      ? 'ring-2 ring-green-500'
+                      : 'hover:opacity-80'
                   }`}
                   onClick={() => setActiveImage('after')}
                 />
               ) : (
                 <div className="w-full h-20 bg-gray-100 rounded-lg flex items-center justify-center">
                   <div className="text-center text-gray-400">
-                    <div className="text-center text-gray-400">
-                      <ImageIcon className="w-6 h-6 mx-auto mb-1" />
-                      <p className="text-xs">No After</p>
-                    </div>
+                    <ImageIcon className="w-6 h-6 mx-auto mb-1" />
+                    <p className="text-xs">No After</p>
                   </div>
                 </div>
               )}
@@ -650,17 +709,17 @@ function ProjectDetailsModal({
           {/* Right Side - Content */}
           <div className="lg:w-1/2 p-6 overflow-y-auto">
             {/* Tabs */}
-            <div className="flex space-x-1 mb-6 bg-gray-100 rounded-lg p-1 modal-tabs">
-              {tabs.map((tab) => {
+            <div className="flex space-x-1 mb-6 bg-gray-100 rounded-lg p-1">
+              {tabs.map(tab => {
                 const Icon = tab.icon
                 return (
                   <button
                     key={tab.id}
                     onClick={() => setActiveTab(tab.id as any)}
-                    className={`flex items-center space-x-2 px-4 py-2 rounded-md text-sm font-medium modal-tab ${
+                    className={`flex items-center space-x-2 px-4 py-2 rounded-md text-sm font-medium transition-colors ${
                       activeTab === tab.id
-                        ? 'tab-active'
-                        : 'tab-inactive'
+                        ? 'bg-white text-green-600 shadow-sm'
+                        : 'text-gray-600 hover:text-gray-900 hover:bg-gray-50'
                     }`}
                   >
                     <Icon className="w-4 h-4" />
@@ -674,21 +733,29 @@ function ProjectDetailsModal({
             <div className="space-y-6">
               {activeTab === 'overview' && (
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Project Overview</h3>
-                  <p className="text-gray-600 leading-relaxed mb-6">{project.description}</p>
-                  
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                    Project Overview
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed mb-6">
+                    {project.description}
+                  </p>
+
                   <div className="grid grid-cols-2 gap-4 mb-6">
                     <div className="bg-gray-50 rounded-lg p-4">
                       <div className="flex items-center space-x-2 mb-2">
                         <Clock className="w-5 h-5 text-green-600" />
-                        <span className="font-medium text-gray-900">Duration</span>
+                        <span className="font-medium text-gray-900">
+                          Duration
+                        </span>
                       </div>
                       <p className="text-gray-600">{project.duration}</p>
                     </div>
                     <div className="bg-gray-50 rounded-lg p-4">
                       <div className="flex items-center space-x-2 mb-2">
                         <DollarSign className="w-5 h-5 text-green-600" />
-                        <span className="font-medium text-gray-900">Budget</span>
+                        <span className="font-medium text-gray-900">
+                          Budget
+                        </span>
                       </div>
                       <p className="text-gray-600">{project.budget}</p>
                     </div>
@@ -698,7 +765,11 @@ function ProjectDetailsModal({
                     <h4 className="font-medium text-gray-900">Key Features</h4>
                     <div className="flex flex-wrap gap-2">
                       {project.features.map((feature, index) => (
-                        <Badge key={index} variant="secondary" className="bg-green-50 text-green-700">
+                        <Badge
+                          key={index}
+                          variant="secondary"
+                          className="bg-green-50 text-green-700"
+                        >
                           {feature}
                         </Badge>
                       ))}
@@ -708,7 +779,9 @@ function ProjectDetailsModal({
                   {/* Before/After Status */}
                   {project.beforeAfter && (
                     <div className="space-y-3">
-                      <h4 className="font-medium text-gray-900">Project Documentation</h4>
+                      <h4 className="font-medium text-gray-900">
+                        Project Documentation
+                      </h4>
                       <div className="bg-gray-50 rounded-lg p-4">
                         {project.beforeImage && project.afterImage ? (
                           <div className="flex items-center space-x-2 text-green-600">
@@ -718,7 +791,10 @@ function ProjectDetailsModal({
                         ) : (
                           <div className="flex items-center space-x-2 text-gray-600">
                             <ImageIcon className="w-5 h-5" />
-                            <span>Project photos available (Before/After coming soon)</span>
+                            <span>
+                              Project photos available (Before/After coming
+                              soon)
+                            </span>
                           </div>
                         )}
                       </div>
@@ -729,7 +805,9 @@ function ProjectDetailsModal({
 
               {activeTab === 'gallery' && (
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Project Gallery</h3>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                    Project Gallery
+                  </h3>
                   <div className="grid grid-cols-2 gap-4">
                     <div className="space-y-4">
                       <img
@@ -777,28 +855,40 @@ function ProjectDetailsModal({
 
               {activeTab === 'specs' && (
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Project Specifications</h3>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                    Project Specifications
+                  </h3>
                   <div className="space-y-4">
                     <div className="bg-gray-50 rounded-lg p-4">
-                      <h4 className="font-medium text-gray-900 mb-2">Project Details</h4>
+                      <h4 className="font-medium text-gray-900 mb-2">
+                        Project Details
+                      </h4>
                       <div className="space-y-2 text-sm text-gray-600">
                         <div className="flex justify-between">
                           <span>Category:</span>
-                          <span className="font-medium">{project.category}</span>
+                          <span className="font-medium">
+                            {project.category}
+                          </span>
                         </div>
                         <div className="flex justify-between">
                           <span>Difficulty:</span>
-                          <span className="font-medium">{project.difficulty}</span>
+                          <span className="font-medium">
+                            {project.difficulty}
+                          </span>
                         </div>
                         <div className="flex justify-between">
                           <span>Completion Date:</span>
-                          <span className="font-medium">{project.completionDate}</span>
+                          <span className="font-medium">
+                            {project.completionDate}
+                          </span>
                         </div>
                       </div>
                     </div>
 
                     <div className="bg-gray-50 rounded-lg p-4">
-                      <h4 className="font-medium text-gray-900 mb-2">Materials & Techniques</h4>
+                      <h4 className="font-medium text-gray-900 mb-2">
+                        Materials & Techniques
+                      </h4>
                       <div className="space-y-2 text-sm text-gray-600">
                         <div className="flex items-center space-x-2">
                           <CheckCircle className="w-4 h-4 text-green-600" />
@@ -820,7 +910,9 @@ function ProjectDetailsModal({
 
               {activeTab === 'reviews' && (
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">Client Reviews</h3>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                    Client Reviews
+                  </h3>
                   <div className="space-y-4">
                     <div className="flex items-center space-x-4 mb-4">
                       <div className="flex items-center space-x-1">
@@ -835,14 +927,19 @@ function ProjectDetailsModal({
                           />
                         ))}
                       </div>
-                      <div className="text-lg font-semibold text-gray-900">{project.rating}</div>
-                      <div className="text-gray-600">({project.reviews} reviews)</div>
+                      <div className="text-lg font-semibold text-gray-900">
+                        {project.rating}
+                      </div>
+                      <div className="text-gray-600">
+                        ({project.reviews} reviews)
+                      </div>
                     </div>
 
                     <div className="bg-gray-50 rounded-lg p-4">
                       <p className="text-gray-600 italic">
-                        "Amazing work! The team transformed our space completely. 
-                        Professional, timely, and exceeded our expectations."
+                        "Amazing work! The team transformed our space
+                        completely. Professional, timely, and exceeded our
+                        expectations."
                       </p>
                       <div className="mt-3 text-sm text-gray-500">
                         - Satisfied Client
@@ -887,7 +984,6 @@ function ProjectCard({
   onViewDetails: () => void
 }) {
   const [isLiked, setIsLiked] = useState(false)
-  const [showBeforeAfter, setShowBeforeAfter] = useState(false)
   const cardRef = useRef<HTMLDivElement>(null)
   const mouseX = useMotionValue(0)
   const mouseY = useMotionValue(0)
@@ -931,14 +1027,13 @@ function ProjectCard({
                   alt={project.title}
                   className="w-full h-full object-cover"
                 />
-                {project.beforeAfter && project.beforeImage && project.afterImage && (
-                  <button
-                    onClick={() => setShowBeforeAfter(!showBeforeAfter)}
-                    className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-2 hover:bg-white transition-all duration-200"
-                  >
-                    <Eye className="w-4 h-4 text-gray-700" />
-                  </button>
-                )}
+                {project.beforeAfter &&
+                  project.beforeImage &&
+                  project.afterImage && (
+                    <button className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-2 hover:bg-white transition-all duration-200">
+                      <Eye className="w-4 h-4 text-gray-700" />
+                    </button>
+                  )}
               </div>
             </div>
 
@@ -1022,7 +1117,7 @@ function ProjectCard({
                   </div>
                 </div>
 
-                <Button 
+                <Button
                   onClick={onViewDetails}
                   className="bg-green-600 hover:bg-green-700"
                 >
@@ -1064,22 +1159,21 @@ function ProjectCard({
         }}
       >
         <Card className="overflow-hidden">
-                      <div className="h-48 relative group overflow-hidden">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-full object-cover"
-              />
+          <div className="h-48 relative group overflow-hidden">
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-full object-cover"
+            />
 
             {/* Before/After Toggle */}
-            {project.beforeAfter && project.beforeImage && project.afterImage && (
-              <button
-                onClick={() => setShowBeforeAfter(!showBeforeAfter)}
-                className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-2 hover:bg-white transition-all duration-200"
-              >
-                <Eye className="w-4 h-4 text-gray-700" />
-              </button>
-            )}
+            {project.beforeAfter &&
+              project.beforeImage &&
+              project.afterImage && (
+                <button className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-2 hover:bg-white transition-all duration-200">
+                  <Eye className="w-4 h-4 text-gray-700" />
+                </button>
+              )}
 
             {/* Like Button */}
             <button
@@ -1102,14 +1196,16 @@ function ProjectCard({
               >
                 {project.category}
               </Badge>
-              {project.beforeAfter && project.beforeImage && project.afterImage && (
-                <Badge
-                  variant="secondary"
-                  className="bg-blue-100 text-blue-800"
-                >
-                  Before/After
-                </Badge>
-              )}
+              {project.beforeAfter &&
+                project.beforeImage &&
+                project.afterImage && (
+                  <Badge
+                    variant="secondary"
+                    className="bg-blue-100 text-blue-800"
+                  >
+                    Before/After
+                  </Badge>
+                )}
             </div>
             <CardTitle className="text-xl mb-2">{project.title}</CardTitle>
             <CardDescription className="text-gray-600">

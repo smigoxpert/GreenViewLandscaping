@@ -34,7 +34,8 @@ const teamMembers = [
     role: 'Lead Landscape Designer',
     experience: '15+ years',
     specialty: 'Sustainable Design',
-    image: 'https://images.unsplash.com/photo-1613181013804-1dcba09e6a9d?w=2560&h=1440&fit=facearea&facepad=15',
+    image:
+      'https://images.unsplash.com/photo-1613181013804-1dcba09e6a9d?w=2560&h=1440&fit=facearea&facepad=15',
     bio: 'Derrick specializes in creating eco-friendly landscapes that harmonize with nature while meeting client needs.',
     certifications: ['Certified Landscape Architect', 'LEED Green Associate'],
     rating: 4.9,
@@ -45,7 +46,8 @@ const teamMembers = [
     role: 'Hardscaping Specialist',
     experience: '12+ years',
     specialty: 'Stone & Concrete Work',
-    image: 'https://images.unsplash.com/photo-1614890085618-0e1054da74f8?w=2560&h=1440&fit=facearea&facepad=15',
+    image:
+      'https://images.unsplash.com/photo-1614890085618-0e1054da74f8?w=2560&h=1440&fit=facearea&facepad=15',
     bio: 'Michael brings precision and creativity to every hardscaping project, from patios to retaining walls.',
     certifications: ['ICPI Certified', 'Concrete Specialist'],
     rating: 4.8,
@@ -56,7 +58,8 @@ const teamMembers = [
     role: 'Garden Maintenance Expert',
     experience: '10+ years',
     specialty: 'Organic Care',
-    image: 'https://images.pexels.com/photos/28243016/pexels-photo-28243016.jpeg?w=2560&h=1440&fit=facearea&facepad=15',
+    image:
+      'https://images.pexels.com/photos/28243016/pexels-photo-28243016.jpeg?w=2560&h=1440&fit=facearea&facepad=15',
     bio: 'Elijah ensures every garden thrives with her expertise in organic maintenance and plant health.',
     certifications: ['Master Gardener', 'Organic Land Care'],
     rating: 4.9,
@@ -157,7 +160,8 @@ const timeline = [
   {
     year: '2024',
     title: 'Industry Leader',
-    description: 'Recognized as one of the top landscaping companies in Arizona.',
+    description:
+      'Recognized as one of the top landscaping companies in Arizona.',
     milestone: '500+ happy clients',
   },
 ]
@@ -256,14 +260,14 @@ export default function AboutPage() {
                 spaces that bring joy and value to our clients' lives.
               </p>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                What started as a passion project has grown into one of Phoenix's
-                most trusted landscaping companies. We've maintained our family
-                values while expanding our expertise and services.
+                What started as a passion project has grown into one of
+                Phoenix's most trusted landscaping companies. We've maintained
+                our family values while expanding our expertise and services.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
                 Today, we're proud to serve hundreds of satisfied clients across
-                Central Arizona, creating landscapes that not only look beautiful
-                but also respect and enhance the natural environment.
+                Central Arizona, creating landscapes that not only look
+                beautiful but also respect and enhance the natural environment.
               </p>
             </motion.div>
 

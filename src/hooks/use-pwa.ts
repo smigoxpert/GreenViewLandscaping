@@ -14,7 +14,7 @@ export function usePWA() {
     isOnline: navigator.onLine,
     canInstall: false,
     deferredPrompt: null,
-    updateAvailable: false
+    updateAvailable: false,
   })
 
   // Check if app is installed
@@ -27,7 +27,7 @@ export function usePWA() {
 
     checkInstallation()
     window.addEventListener('appinstalled', checkInstallation)
-    
+
     return () => {
       window.removeEventListener('appinstalled', checkInstallation)
     }
@@ -35,8 +35,10 @@ export function usePWA() {
 
   // Monitor online/offline status
   useEffect(() => {
-    const handleOnline = () => setPwaState(prev => ({ ...prev, isOnline: true }))
-    const handleOffline = () => setPwaState(prev => ({ ...prev, isOnline: false }))
+    const handleOnline = () =>
+      setPwaState(prev => ({ ...prev, isOnline: true }))
+    const handleOffline = () =>
+      setPwaState(prev => ({ ...prev, isOnline: false }))
 
     window.addEventListener('online', handleOnline)
     window.addEventListener('offline', handleOffline)
@@ -54,14 +56,17 @@ export function usePWA() {
       setPwaState(prev => ({
         ...prev,
         canInstall: true,
-        deferredPrompt: e
+        deferredPrompt: e,
       }))
     }
 
     window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt)
 
     return () => {
-      window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt)
+      window.removeEventListener(
+        'beforeinstallprompt',
+        handleBeforeInstallPrompt
+      )
     }
   }, [])
 
@@ -79,9 +84,13 @@ export function usePWA() {
     if (pwaState.deferredPrompt) {
       pwaState.deferredPrompt.prompt()
       const { outcome } = await pwaState.deferredPrompt.userChoice
-      
+
       if (outcome === 'accepted') {
-        setPwaState(prev => ({ ...prev, canInstall: false, deferredPrompt: null }))
+        setPwaState(prev => ({
+          ...prev,
+          canInstall: false,
+          deferredPrompt: null,
+        }))
       }
     }
   }, [pwaState.deferredPrompt])
@@ -92,19 +101,22 @@ export function usePWA() {
       try {
         const registration = await navigator.serviceWorker.register('/sw.js')
         console.log('SW registered: ', registration)
-        
+
         // Check for updates
         registration.addEventListener('updatefound', () => {
           const newWorker = registration.installing
           if (newWorker) {
             newWorker.addEventListener('statechange', () => {
-              if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+              if (
+                newWorker.state === 'installed' &&
+                navigator.serviceWorker.controller
+              ) {
                 setPwaState(prev => ({ ...prev, updateAvailable: true }))
               }
             })
           }
         })
-        
+
         return registration
       } catch (error) {
         console.error('SW registration failed: ', error)
@@ -130,11 +142,14 @@ export function usePWA() {
   }, [])
 
   // Send push notification
-  const sendPushNotification = useCallback((title: string, options?: NotificationOptions) => {
-    if ('Notification' in window && Notification.permission === 'granted') {
-      new Notification(title, options)
-    }
-  }, [])
+  const sendPushNotification = useCallback(
+    (title: string, options?: NotificationOptions) => {
+      if ('Notification' in window && Notification.permission === 'granted') {
+        new Notification(title, options)
+      }
+    },
+    []
+  )
 
   // Check if PWA is supported
   const isPWASupported = useCallback(() => {
@@ -156,7 +171,7 @@ export function usePWA() {
     requestNotificationPermission,
     sendPushNotification,
     isPWASupported,
-    getInstallationStatus
+    getInstallationStatus,
   }
 }
 
@@ -175,7 +190,10 @@ export function usePWAInstall() {
     window.addEventListener('beforeinstallprompt', handleBeforeInstallPrompt)
 
     return () => {
-      window.removeEventListener('beforeinstallprompt', handleBeforeInstallPrompt)
+      window.removeEventListener(
+        'beforeinstallprompt',
+        handleBeforeInstallPrompt
+      )
     }
   }, [])
 
@@ -183,7 +201,7 @@ export function usePWAInstall() {
     if (deferredPrompt) {
       deferredPrompt.prompt()
       const { outcome } = await deferredPrompt.userChoice
-      
+
       if (outcome === 'accepted') {
         setShowInstallPrompt(false)
         setDeferredPrompt(null)
@@ -198,7 +216,7 @@ export function usePWAInstall() {
   return {
     showInstallPrompt,
     installPWA,
-    dismissInstallPrompt
+    dismissInstallPrompt,
   }
 }
 
@@ -246,6 +264,6 @@ export function useOfflineSupport() {
     isOnline,
     offlineQueue,
     addToOfflineQueue,
-    processOfflineQueue
+    processOfflineQueue,
   }
 }

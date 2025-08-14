@@ -21,7 +21,7 @@ export function SwipeableCard({
   onSwipeUp,
   onSwipeDown,
   threshold = 100,
-  className = ''
+  className = '',
 }: SwipeableCardProps) {
   const x = useMotionValue(0)
   const y = useMotionValue(0)
@@ -76,7 +76,7 @@ export function PullToRefresh({
   onRefresh,
   children,
   threshold = 80,
-  className = ''
+  className = '',
 }: PullToRefreshProps) {
   const [isRefreshing, setIsRefreshing] = useState(false)
   const [pullDistance, setPullDistance] = useState(0)
@@ -86,17 +86,17 @@ export function PullToRefresh({
     if (containerRef.current?.scrollTop === 0) {
       const touch = e.touches[0]
       const startY = touch.clientY
-      
+
       const handleTouchMove = (e: TouchEvent) => {
         const touch = e.touches[0]
         const currentY = touch.clientY
         const distance = Math.max(0, currentY - startY)
-        
+
         if (distance > 0) {
           setPullDistance(Math.min(distance * 0.5, threshold * 2))
         }
       }
-      
+
       const handleTouchEnd = () => {
         if (pullDistance > threshold && !isRefreshing) {
           setIsRefreshing(true)
@@ -107,12 +107,14 @@ export function PullToRefresh({
         } else {
           setPullDistance(0)
         }
-        
+
         document.removeEventListener('touchmove', handleTouchMove)
         document.removeEventListener('touchend', handleTouchEnd)
       }
-      
-      document.addEventListener('touchmove', handleTouchMove, { passive: false })
+
+      document.addEventListener('touchmove', handleTouchMove, {
+        passive: false,
+      })
       document.addEventListener('touchend', handleTouchEnd)
     }
   }
@@ -136,9 +138,13 @@ export function PullToRefresh({
           </div>
         ) : (
           <div className="flex items-center space-x-2">
-            <ChevronDown className={`w-4 h-4 transition-transform ${pullDistance > threshold ? 'rotate-180' : ''}`} />
+            <ChevronDown
+              className={`w-4 h-4 transition-transform ${pullDistance > threshold ? 'rotate-180' : ''}`}
+            />
             <span className="text-sm font-medium">
-              {pullDistance > threshold ? 'Release to refresh' : 'Pull to refresh'}
+              {pullDistance > threshold
+                ? 'Release to refresh'
+                : 'Pull to refresh'}
             </span>
           </div>
         )}
@@ -163,7 +169,7 @@ export function MobileNavigation({
   isOpen,
   onClose,
   children,
-  className = ''
+  className = '',
 }: MobileNavigationProps) {
   return (
     <motion.div
@@ -177,7 +183,7 @@ export function MobileNavigation({
         className="absolute inset-0 bg-black/50 backdrop-blur-sm"
         onClick={onClose}
       />
-      
+
       {/* Navigation Panel */}
       <div className="absolute right-0 top-0 h-full w-80 max-w-[85vw] bg-white shadow-2xl">
         <div className="flex items-center justify-between p-4 border-b border-gray-200">
@@ -189,10 +195,8 @@ export function MobileNavigation({
             <X className="w-5 h-5 text-gray-600" />
           </button>
         </div>
-        
-        <div className="p-4">
-          {children}
-        </div>
+
+        <div className="p-4">{children}</div>
       </div>
     </motion.div>
   )
@@ -211,18 +215,19 @@ export function TouchFriendlyButton({
   onClick,
   className = '',
   size = 'md',
-  variant = 'primary'
+  variant = 'primary',
 }: TouchFriendlyButtonProps) {
   const sizeClasses = {
     sm: 'px-4 py-2 text-sm min-h-[44px] min-w-[44px]',
     md: 'px-6 py-3 text-base min-h-[48px] min-w-[48px]',
-    lg: 'px-8 py-4 text-lg min-h-[56px] min-w-[56px]'
+    lg: 'px-8 py-4 text-lg min-h-[56px] min-w-[56px]',
   }
 
   const variantClasses = {
     primary: 'bg-green-600 text-white hover:bg-green-700 active:bg-green-800',
     secondary: 'bg-gray-200 text-gray-900 hover:bg-gray-300 active:bg-gray-400',
-    outline: 'border-2 border-green-600 text-green-600 hover:bg-green-50 active:bg-green-100'
+    outline:
+      'border-2 border-green-600 text-green-600 hover:bg-green-50 active:bg-green-100',
   }
 
   return (
@@ -258,10 +263,15 @@ export function MobileGestureHandler({
   onSwipeRight,
   onSwipeUp,
   onSwipeDown,
-  className = ''
+  className = '',
 }: MobileGestureHandlerProps) {
-  const [startTouch, setStartTouch] = useState<{ x: number; y: number } | null>(null)
-  const [currentTouch, setCurrentTouch] = useState<{ x: number; y: number } | null>(null)
+  const [startTouch, setStartTouch] = useState<{ x: number; y: number } | null>(
+    null
+  )
+  const [currentTouch, setCurrentTouch] = useState<{
+    x: number
+    y: number
+  } | null>(null)
 
   const handleTouchStart = (e: React.TouchEvent) => {
     const touch = e.touches[0]

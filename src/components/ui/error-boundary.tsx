@@ -29,7 +29,7 @@ export class ErrorBoundary extends Component<Props, State> {
     console.error('Error caught by boundary:', error, errorInfo)
     this.setState({
       error,
-      errorInfo
+      errorInfo,
     })
   }
 
@@ -53,13 +53,14 @@ export class ErrorBoundary extends Component<Props, State> {
             <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
               <AlertTriangle className="w-8 h-8 text-red-600" />
             </div>
-            
+
             <h1 className="text-2xl font-bold text-gray-900 mb-4">
               Oops! Something went wrong
             </h1>
-            
+
             <p className="text-gray-600 mb-6">
-              We encountered an unexpected error. Don't worry, our team has been notified and is working to fix it.
+              We encountered an unexpected error. Don't worry, our team has been
+              notified and is working to fix it.
             </p>
 
             {process.env.NODE_ENV === 'development' && this.state.error && (
@@ -91,7 +92,7 @@ export class ErrorBoundary extends Component<Props, State> {
                 <RefreshCw className="w-4 h-4 mr-2" />
                 Try Again
               </Button>
-              
+
               <Button
                 onClick={this.handleGoHome}
                 variant="outline"
@@ -139,12 +140,12 @@ export function useErrorHandler() {
 }
 
 // Error Fallback Component
-export function ErrorFallback({ 
-  error, 
-  resetErrorBoundary 
-}: { 
+export function ErrorFallback({
+  error,
+  resetErrorBoundary,
+}: {
   error: Error
-  resetErrorBoundary: () => void 
+  resetErrorBoundary: () => void
 }) {
   return (
     <div className="min-h-screen bg-gradient-to-br from-red-50 to-pink-100 flex items-center justify-center p-4">
@@ -152,11 +153,11 @@ export function ErrorFallback({
         <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
           <AlertTriangle className="w-8 h-8 text-red-600" />
         </div>
-        
+
         <h1 className="text-2xl font-bold text-gray-900 mb-4">
           Something went wrong
         </h1>
-        
+
         <p className="text-gray-600 mb-6">
           We're sorry, but something unexpected happened. Please try again.
         </p>

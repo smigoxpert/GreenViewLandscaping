@@ -35,7 +35,7 @@ export function TestimonialsSlider() {
             Don't just take our word for it. Here's what our satisfied clients
             have to say about their experience with us.
           </p>
-          
+
           {/* Overall Rating */}
           <div className="mt-8 flex items-center justify-center space-x-4">
             <div className="flex items-center space-x-1">
@@ -72,7 +72,9 @@ export function TestimonialsSlider() {
                       className="w-12 h-12 rounded-full object-cover border-2 border-gray-200"
                     />
                     <div>
-                      <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
+                      <h4 className="font-semibold text-gray-900">
+                        {testimonial.name}
+                      </h4>
                       <div className="flex items-center space-x-1">
                         {[...Array(5)].map((_, i) => (
                           <Star
@@ -92,11 +94,11 @@ export function TestimonialsSlider() {
                     {new Date(testimonial.date).toLocaleDateString('en-US', {
                       month: 'short',
                       day: 'numeric',
-                      year: 'numeric'
+                      year: 'numeric',
                     })}
                   </div>
                 </div>
-                
+
                 {/* Project Info */}
                 <div className="flex items-center space-x-4 text-sm text-gray-600">
                   <div className="flex items-center space-x-1">
@@ -139,11 +141,7 @@ export function TestimonialsSlider() {
                 Show More Reviews
               </Button>
             ) : (
-              <Button
-                onClick={showLess}
-                variant="outline"
-                size="lg"
-              >
+              <Button onClick={showLess} variant="outline" size="lg">
                 Show Less
               </Button>
             )}

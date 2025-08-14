@@ -6,7 +6,8 @@ import { Download, X, Smartphone, Globe } from 'lucide-react'
 import { usePWAInstall } from '@/hooks/use-pwa'
 
 export function PWAInstallPrompt() {
-  const { showInstallPrompt, installPWA, dismissInstallPrompt } = usePWAInstall()
+  const { showInstallPrompt, installPWA, dismissInstallPrompt } =
+    usePWAInstall()
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
@@ -47,7 +48,9 @@ export function PWAInstallPrompt() {
                 <Download className="w-5 h-5 text-green-600" />
               </div>
               <div>
-                <h3 className="font-semibold text-gray-900">Install GreenView</h3>
+                <h3 className="font-semibold text-gray-900">
+                  Install GreenView
+                </h3>
                 <p className="text-sm text-gray-600">Get the app experience</p>
               </div>
             </div>
@@ -63,7 +66,9 @@ export function PWAInstallPrompt() {
           <div className="space-y-3 mb-6">
             <div className="flex items-center space-x-3">
               <Smartphone className="w-4 h-4 text-green-600" />
-              <span className="text-sm text-gray-700">Access from your home screen</span>
+              <span className="text-sm text-gray-700">
+                Access from your home screen
+              </span>
             </div>
             <div className="flex items-center space-x-3">
               <Globe className="w-4 h-4 text-green-600" />
@@ -166,8 +171,12 @@ export function PWAUpdateNotification() {
                 <span className="text-blue-600 text-xl">🔄</span>
               </div>
               <div>
-                <h3 className="font-semibold text-blue-900">Update Available</h3>
-                <p className="text-sm text-blue-700">New version of GreenView is ready</p>
+                <h3 className="font-semibold text-blue-900">
+                  Update Available
+                </h3>
+                <p className="text-sm text-blue-700">
+                  New version of GreenView is ready
+                </p>
               </div>
             </div>
             <button

@@ -8,15 +8,15 @@ interface SkeletonProps {
   lines?: number
 }
 
-export function Skeleton({ 
-  className, 
-  variant = 'rectangular', 
-  width, 
-  height, 
-  lines = 1 
+export function Skeleton({
+  className,
+  variant = 'rectangular',
+  width,
+  height,
+  lines = 1,
 }: SkeletonProps) {
   const baseClasses = 'animate-pulse bg-gray-200 rounded'
-  
+
   if (variant === 'text') {
     return (
       <div className="space-y-2">
@@ -38,14 +38,10 @@ export function Skeleton({
   if (variant === 'circular') {
     return (
       <div
-        className={cn(
-          baseClasses,
-          'rounded-full',
-          className
-        )}
+        className={cn(baseClasses, 'rounded-full', className)}
         style={{
           width: width || '40px',
-          height: height || '40px'
+          height: height || '40px',
         }}
       />
     )
@@ -68,7 +64,7 @@ export function Skeleton({
       className={cn(baseClasses, className)}
       style={{
         width: width || '100%',
-        height: height || '20px'
+        height: height || '20px',
       }}
     />
   )
@@ -78,7 +74,11 @@ export function Skeleton({
 export function ProjectCardSkeleton() {
   return (
     <div className="bg-white rounded-xl shadow-lg border border-gray-100 p-6 space-y-4">
-      <Skeleton variant="rectangular" height="200px" className="w-full rounded-lg" />
+      <Skeleton
+        variant="rectangular"
+        height="200px"
+        className="w-full rounded-lg"
+      />
       <div className="space-y-3">
         <Skeleton variant="text" lines={2} />
         <div className="flex space-x-2">
@@ -100,10 +100,19 @@ export function ModalSkeleton() {
       </div>
       <div className="flex flex-col lg:flex-row h-[calc(90vh-120px)]">
         <div className="lg:w-1/2 p-6">
-          <Skeleton variant="rectangular" height="400px" className="w-full rounded-xl mb-4" />
+          <Skeleton
+            variant="rectangular"
+            height="400px"
+            className="w-full rounded-xl mb-4"
+          />
           <div className="grid grid-cols-3 gap-2">
             {Array.from({ length: 3 }).map((_, i) => (
-              <Skeleton key={i} variant="rectangular" height="80px" className="rounded-lg" />
+              <Skeleton
+                key={i}
+                variant="rectangular"
+                height="80px"
+                className="rounded-lg"
+              />
             ))}
           </div>
         </div>
@@ -124,7 +133,11 @@ export function HeroSkeleton() {
   return (
     <div className="relative pt-24 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="relative z-10 max-w-7xl mx-auto text-center space-y-6">
-        <Skeleton variant="rectangular" height="60px" className="w-3/4 mx-auto" />
+        <Skeleton
+          variant="rectangular"
+          height="60px"
+          className="w-3/4 mx-auto"
+        />
         <Skeleton variant="text" lines={2} className="max-w-3xl mx-auto" />
         <div className="flex justify-center space-x-4">
           <Skeleton variant="rectangular" width="150px" height="50px" />

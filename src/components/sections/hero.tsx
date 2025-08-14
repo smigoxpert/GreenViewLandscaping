@@ -59,13 +59,13 @@ export function Hero() {
           style={{ transform: `scale(${scale}) translateY(${y})` }}
         />
       </div>
-      
+
       {/* Strong Dark Overlay for Text Readability */}
       <div className="absolute inset-0 bg-black/20" />
-      
+
       {/* Gradient Overlay for Dynamic Effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-black/40 via-black/20 to-black/10" />
-      
+
       {/* Animated Gradient Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-brand-500/15 via-transparent to-purple-600/15 animate-pulse" />
 

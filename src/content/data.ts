@@ -43,7 +43,8 @@ export const services: Service[] = [
     ],
     price: 'From $2,500',
     duration: '2-4 weeks',
-    image: 'https://images.pexels.com/photos/33404224/pexels-photo-33404224.jpeg',
+    image:
+      'https://images.pexels.com/photos/33404224/pexels-photo-33404224.jpeg',
   },
   {
     id: 'hardscaping',
@@ -62,7 +63,8 @@ export const services: Service[] = [
     ],
     price: 'From $5,000',
     duration: '1-3 weeks',
-    image: 'https://images.unsplash.com/photo-1596481768453-8befafc2d7ae?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    image:
+      'https://images.unsplash.com/photo-1596481768453-8befafc2d7ae?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     id: 'tree-services',
@@ -100,7 +102,8 @@ export const services: Service[] = [
     ],
     price: 'From $3,000',
     duration: '1-2 weeks',
-    image: 'https://images.unsplash.com/photo-1630862338638-6cf93f610dd8?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    image:
+      'https://images.unsplash.com/photo-1630862338638-6cf93f610dd8?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     id: 'seasonal-cleanup',
@@ -119,7 +122,8 @@ export const services: Service[] = [
     ],
     price: 'From $300',
     duration: '1-3 days',
-    image: 'https://images.unsplash.com/photo-1733286125300-b4c5563295ad?q=80&w=1732&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    image:
+      'https://images.unsplash.com/photo-1733286125300-b4c5563295ad?q=80&w=1732&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
 ]
 
@@ -142,8 +146,10 @@ export const projects: Project[] = [
     zipCode: '78701',
     date: '2024-03-15',
     services: ['landscape-design', 'hardscaping'],
-    beforeImage: 'https://images.pexels.com/photos/6218318/pexels-photo-6218318.jpeg',
-    afterImage: 'https://images.pexels.com/photos/1590336/pexels-photo-1590336.jpeg',
+    beforeImage:
+      'https://images.pexels.com/photos/6218318/pexels-photo-6218318.jpeg',
+    afterImage:
+      'https://images.pexels.com/photos/1590336/pexels-photo-1590336.jpeg',
   },
   {
     id: 'drought-resistant-garden',
@@ -151,7 +157,8 @@ export const projects: Project[] = [
     excerpt: 'Water-wise landscaping with native plants',
     description:
       'A beautiful, low-maintenance garden designed to thrive in our local climate. Features drought-resistant native plants, efficient irrigation, and sustainable design principles.',
-    cover: 'https://images.unsplash.com/photo-1655731986321-d9bee041ec88?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    cover:
+      'https://images.unsplash.com/photo-1655731986321-d9bee041ec88?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     images: [
       'https://images.pexels.com/photos/33404224/pexels-photo-33404224.jpeg',
       'https://images.pexels.com/photos/1001676/pexels-photo-1001676.jpeg',
@@ -162,8 +169,10 @@ export const projects: Project[] = [
     zipCode: '78702',
     date: '2024-02-20',
     services: ['landscape-design', 'irrigation'],
-    beforeImage: 'https://images.pexels.com/photos/6218318/pexels-photo-6218318.jpeg',
-    afterImage: 'https://images.pexels.com/photos/33404224/pexels-photo-33404224.jpeg',
+    beforeImage:
+      'https://images.pexels.com/photos/6218318/pexels-photo-6218318.jpeg',
+    afterImage:
+      'https://images.pexels.com/photos/33404224/pexels-photo-33404224.jpeg',
   },
   {
     id: 'family-friendly-yard',
@@ -171,7 +180,8 @@ export const projects: Project[] = [
     excerpt: 'Safe and fun outdoor space for children',
     description:
       'A family-oriented landscape design that creates a safe, engaging outdoor environment for children while maintaining aesthetic appeal for adults.',
-    cover: 'https://images.unsplash.com/photo-1626075246403-544a14566c3d?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    cover:
+      'https://images.unsplash.com/photo-1626075246403-544a14566c3d?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     images: [
       'https://images.pexels.com/photos/1001676/pexels-photo-1001676.jpeg',
       'https://images.pexels.com/photos/1590336/pexels-photo-1590336.jpeg',
@@ -182,8 +192,10 @@ export const projects: Project[] = [
     zipCode: '78703',
     date: '2024-01-10',
     services: ['landscape-design', 'lawn-maintenance'],
-    beforeImage: 'https://images.pexels.com/photos/6218318/pexels-photo-6218318.jpeg',
-    afterImage: 'https://images.pexels.com/photos/1001676/pexels-photo-1001676.jpeg',
+    beforeImage:
+      'https://images.pexels.com/photos/6218318/pexels-photo-6218318.jpeg',
+    afterImage:
+      'https://images.pexels.com/photos/1001676/pexels-photo-1001676.jpeg',
   },
 ]
 
@@ -196,7 +208,8 @@ export const testimonials: Testimonial[] = [
     city: 'Phoenix, AZ',
     date: '2024-03-20',
     project: 'Modern Backyard Oasis',
-    avatar: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?w=150&h=150&fit=crop&crop=face',
+    avatar:
+      'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?w=150&h=150&fit=crop&crop=face',
   },
   {
     id: '2',
@@ -206,7 +219,8 @@ export const testimonials: Testimonial[] = [
     city: 'Scottsdale, AZ',
     date: '2024-02-25',
     project: 'Drought-Resistant Garden',
-    avatar: 'https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?w=150&h=150&fit=crop&crop=face',
+    avatar:
+      'https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?w=150&h=150&fit=crop&crop=face',
   },
   {
     id: '3',
@@ -216,7 +230,8 @@ export const testimonials: Testimonial[] = [
     city: 'Mesa, AZ',
     date: '2024-01-15',
     project: 'Family-Friendly Yard',
-    avatar: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?w=150&h=150&fit=crop&crop=face',
+    avatar:
+      'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?w=150&h=150&fit=crop&crop=face',
   },
   {
     id: '4',
@@ -226,7 +241,8 @@ export const testimonials: Testimonial[] = [
     city: 'Tempe, AZ',
     date: '2024-01-05',
     project: 'Custom Garden Design',
-    avatar: 'https://images.pexels.com/photos/1648387/pexels-photo-1648387.jpeg?w=800&h=800&fit=crop&crop=face',
+    avatar:
+      'https://images.pexels.com/photos/1648387/pexels-photo-1648387.jpeg?w=800&h=800&fit=crop&crop=face',
   },
   {
     id: '5',
@@ -236,7 +252,8 @@ export const testimonials: Testimonial[] = [
     city: 'Chandler, AZ',
     date: '2024-01-10',
     project: 'Outdoor Kitchen & Patio',
-    avatar: 'https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?w=150&h=150&fit=crop&crop=face',
+    avatar:
+      'https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?w=150&h=150&fit=crop&crop=face',
   },
   {
     id: '6',
@@ -246,27 +263,30 @@ export const testimonials: Testimonial[] = [
     city: 'Gilbert, AZ',
     date: '2024-02-15',
     project: 'Front Yard Makeover',
-    avatar: 'https://images.pexels.com/photos/3761521/pexels-photo-3761521.jpeg?w=150&h=150&fit=crop&crop=face',
+    avatar:
+      'https://images.pexels.com/photos/3761521/pexels-photo-3761521.jpeg?w=150&h=150&fit=crop&crop=face',
   },
   {
     id: '7',
     name: 'Lisa Thompson',
-    text: 'Amazing work on our pool landscaping! They created a tropical paradise that makes us feel like we\'re on vacation every day. Highly skilled team!',
+    text: "Amazing work on our pool landscaping! They created a tropical paradise that makes us feel like we're on vacation every day. Highly skilled team!",
     rating: 5,
     city: 'Peoria, AZ',
     date: '2024-02-28',
     project: 'Pool Landscaping',
-    avatar: 'https://images.pexels.com/photos/20335528/pexels-photo-20335528.jpeg?w=150&h=150&fit=crop&crop=face',
+    avatar:
+      'https://images.pexels.com/photos/20335528/pexels-photo-20335528.jpeg?w=150&h=150&fit=crop&crop=face',
   },
   {
     id: '8',
     name: 'Craig Green',
-    text: 'The best landscaping company we\'ve ever worked with. They completed our project on time and budget, and the results exceeded our expectations.',
+    text: "The best landscaping company we've ever worked with. They completed our project on time and budget, and the results exceeded our expectations.",
     rating: 5,
     city: 'Surprise, AZ',
     date: '2024-03-01',
     project: 'Complete Yard Renovation',
-    avatar: 'https://images.pexels.com/photos/1181391/pexels-photo-1181391.jpeg?w=150&h=150&fit=crop&crop=face',
+    avatar:
+      'https://images.pexels.com/photos/1181391/pexels-photo-1181391.jpeg?w=150&h=150&fit=crop&crop=face',
   },
 ]
 

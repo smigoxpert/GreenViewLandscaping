@@ -1,11 +1,7 @@
 'use client'
 
 import { motion, useMotionValue, useSpring, useTransform } from 'framer-motion'
-import {
-  ArrowRight,
-  Clock,
-  Star,
-} from 'lucide-react'
+import { ArrowRight, Clock, Star } from 'lucide-react'
 import Link from 'next/link'
 import { useRef } from 'react'
 import { services as servicesData } from '@/content/data'
